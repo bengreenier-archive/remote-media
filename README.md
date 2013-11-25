@@ -3,6 +3,8 @@ remote-media
 
 little c# webstack to simulate media key presses remotely
 
+> There's __no security__ for this, so it could be quite comical if you leave this running on a laptop, and enter a public network
+
 
 # How?
 
