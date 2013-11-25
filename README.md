@@ -8,7 +8,11 @@ little c# webstack to simulate media key presses remotely
 
 Run the application on a windows machine, and browse to `hostname:port` in a browser.
 
-notes: __you must run the app as admin!__, and __you must allow the port through your firewall! (default is 3000)__
+> You must run the app as admin!
+
+> You must allow the port through your firewall! (default is `3000`)
+
+> You must be sure served.html is in the directory you run the app from! 
 
 # Why?
 
