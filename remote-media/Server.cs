@@ -76,10 +76,10 @@ namespace remote_media
                         keybd_event(VK_VOLUME_DOWN, 0x45, KEYEVENTF_EXTENDEDKEY, 0);
                         keybd_event(VK_VOLUME_DOWN, 0x45, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
                     }
-                    Byte[] buffer = System.Text.Encoding.UTF8.GetBytes("<html><head><title>remote-media</title></head><body>"+
-                    "<table><tr><td><a href='/prev'>Prev</a></td><td><a href='/toggle'>Play/Pause</a></td><td><a href='/next'>Next</a></td></tr>"+
-                    "<tr><td><a href='/up'>up</a></td><td><a href='/down'>down</a></td></tr>"+
-                    "</body></html>");
+
+
+                    Byte[] buffer = File.ReadAllBytes("./served.html");
+                    
                     output.Write(buffer, 0, buffer.Length);
                     output.Close();
                 }
